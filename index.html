@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>calcul</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="code.js"></script>
+  </head>
+  <body>
+    <header>
+      <a href="#" id="1" onclick="aff1()">somme</a> &nbsp &nbsp &nbsp &nbsp
+      &nbsp <a href="#" id="2" onclick="aff2()">multiplication</a> &nbsp &nbsp
+      &nbsp &nbsp &nbsp
+      <a href="#" id="3" onclick="aff3()">soustraction</a> &nbsp &nbsp &nbsp
+      &nbsp
+      <a href="#" id="4" onclick="aff4()">division</a>
+    </header>
+    <div class="place">
+      <center>
+        <fieldset>
+          <legend>calcul</legend>
+          <table>
+            <tr>
+              <td><label for="">Entier 1</label></td>
+              <td><input type="text" id="e1" value="0" maxlength="5" /></td>
+            </tr>
+            <tr>
+              <td><label for="">Entier 2</label></td>
+              <td><input type="text" value="0" id="e2" maxlength="5" /></td>
+            </tr>
+            <tr>
+              <td><label for="">resulatat</label></td>
+              <td><input id="rus" type="text" disabled /></td>
+            </tr>
+          </table>
+          <button onclick="somme()" id="b1" disabled>somme</button>
+          <button onclick="mult()" id="b2" disabled>multiplication</button>
+          <button onclick="sous()" id="b3" disabled>soustraction</button>
+          <button onclick="div()" id="b4" disabled>division</button>
+        </fieldset>
+      </center>
+    </div>
+  </body>
+</html>
